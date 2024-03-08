@@ -16,7 +16,7 @@ export default function HeroSection() {
                         sequence={[
                             'Ezequiel Antoine',
                             1000, 
-                            'Desarrollador Web FullStack',
+                            'Desarrollador FullStack',
                             1000
                         ]}
                         wrapper="span"
@@ -24,7 +24,7 @@ export default function HeroSection() {
                         repeat={Infinity}
                     />
                 </h1>
-                <p className='text-[#6c7175] text-base sm:text-lg mb-6 lg:text-xl'>
+                <p className='text-[#6c7175] position- text-base sm:text-lg mb-6 lg:text-xl'>
                     Una persona versátil y apasionada, con experiencia laboral en diversos rubros, explorando diferentes industrias y roles, lo que me ha permitido desarrollar perspectiva y habilidad para adaptarme rápidamente a nuevos desafíos, siempre desde el compromiso y la empatía. 
                     Como desarrollador, combino mis hobbies y vivencias en otros campos con mi capacidad para pensar fuera de la caja para crear soluciones con la idea de ser lo mas simples y efectivas posibles. 
                 </p>
