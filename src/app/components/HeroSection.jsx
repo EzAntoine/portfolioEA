@@ -1,19 +1,42 @@
+"use client";
 import React from 'react'
+import { TypeAnimation } from 'react-type-animation'
 
 export default function HeroSection() {
   return (
     <section>
         <div className='grid grid-cols-1 lg:grid-cols-12'>
-            <div className='col-span-7 place-self-center text-center sm:text-left'>
-                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-                    Mi portfolio
+            <div className='col-span-9 place-self-center text-center sm:text-left'>
+                <h1 className="text-white mb-4 text-4xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold">
+                    <span className='text-transparent bg-clip-text bg-gradient-to-br from-green-500 via-lime-500 to-yellow-500'>
+                         Hola! Soy{" "}
+                    </span>
+                    <br></br>
+                    <TypeAnimation
+                        sequence={[
+                            'Ezequiel Antoine',
+                            1000, 
+                            'Desarrollador Web FullStack',
+                            1000
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        repeat={Infinity}
+                    />
                 </h1>
                 <p className='text-[#6c7175] text-base sm:text-lg mb-6 lg:text-xl'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sunt ducimus natus ullam omnis iusto? Non atque quas, tenetur explicabo ut modi nihil inventore ipsum accusamus odit dicta iste rem.
+                    Una persona versátil y apasionada, con experiencia laboral en diversos rubros, explorando diferentes industrias y roles, lo que me ha permitido desarrollar perspectiva y habilidad para adaptarme rápidamente a nuevos desafíos, siempre desde el compromiso y la empatía. 
+                    Como desarrollador, combino mis hobbies y vivencias en otros campos con mi capacidad para pensar fuera de la caja para crear soluciones con la idea de ser lo mas simples y efectivas posibles. 
                 </p>
                 <div>
-                    <button className='px-6 py3 w-full sm:w-fit rounded-sm mr-4 bg-lime-300 font-semibold hover:bg-slate-800 hover:text-white text-black border border-white mt-4'>Contacto</button>
-                    <button className='px-6 py3 w-full sm:w-fit rounded-sm mr-4 bg-transparent font-semibold hover:bg-slate-800 text-white border border-white mt-4'>Descargar CV</button>
+                    <button className='px-6 py-2 w-full sm:w-fit rounded-sm mr-4 font-semibold text-black border border-white mt-4 bg-gradient-to-br from-green-500 via-lime-500 to-yellow-500 hover:bg-slate-800'>
+                        Contacto
+                    </button>
+                    <button className='px-1 inline-block py-1 w-full sm:w-fit rounded-sm mr-4 bg-transparent font-semibold bg-gradient-to-br from-green-500 via-lime-500 to-yellow-500 hover:bg-slate-800 text-white border border-white mt-3'>
+                        <span className='block bg-[#121212] hover:bg-slate-800 rounded-sm px-5 py-1'>
+                            Descargar CV
+                        </span>
+                    </button>
                 </div>
             </div>
             {/* <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
