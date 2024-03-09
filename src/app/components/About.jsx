@@ -93,8 +93,8 @@ const TAB_DATA = [
         id: "courses",
         content: (
           <ul className="list-disc pl-2">
-            <li>CSS Avanzado - Desafio Latam | 2024</li>
-            <li>Diseño para programacion esencial - Linkedin | 2024</li>
+            <li className='mb-4'>CSS Avanzado - Desafio Latam | 2024</li>
+            <li className='mb-4'>Diseño para programacion esencial - Linkedin | 2024</li>
           </ul>
         ),
       },
@@ -103,17 +103,6 @@ const TAB_DATA = [
 export default function About() {
     const [tab, setTab]=useState("skills");
     const [isPending, startTransition]=useTransition();
-
-    /* const popup = ({ onClose }) => {
-        return (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-white p-8 rounded-lg max-w-md">
-              <button className="absolute top-0 right-0 p-2" onClick={onClose}>Cerrar</button>
-              <img src="/tu-imagen.jpg" alt="Imagen" />
-            </div>
-          </div>
-        );
-      }; */
 
     const handleTabChange = (id)=>{
         startTransition(()=>{
