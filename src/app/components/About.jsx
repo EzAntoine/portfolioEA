@@ -18,6 +18,8 @@ import postmanSVG from "../../../public/tecnologiesSVG/postman.svg"
 import sequelizeSVG from "../../../public/tecnologiesSVG/sequelize.svg"
 import tailwindSVG from "../../../public/tecnologiesSVG/tailwindcss.svg"
 
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid"
+
 const TAB_DATA = [
     {
         title: "Habilidades",
@@ -40,16 +42,16 @@ const TAB_DATA = [
                     <Image src={expressSVG} alt="Express.js" title='Express.js' width={60} height={60}/>
                 </li>
                 <li className='w-1/4 flex justify-center items-center'>
-                    <Image src={cssSVG} alt="CSS" title='CSS' width={60} height={60}/>
-                </li>
-                <li className='w-1/4 flex justify-center items-center'>
-                    <Image src={tailwindSVG} alt="Tailwind CSS" title='Tailwind CSS' width={60} height={60}/>
-                </li>
-                <li className='w-1/4 flex justify-center items-center'>
                     <Image src={nextSVG} alt="Next.js" title='Next.js' width={60} height={60}/>
                 </li>
                 <li className='w-1/4 flex justify-center items-center'>
                     <Image src={htmlSVG} alt="HTML" title='HTML' width={60} height={60}/>
+                </li>
+                <li className='w-1/4 flex justify-center items-center'>
+                    <Image src={cssSVG} alt="CSS" title='CSS' width={60} height={60}/>
+                </li>
+                <li className='w-1/4 flex justify-center items-center'>
+                    <Image src={tailwindSVG} alt="Tailwind CSS" title='Tailwind CSS' width={60} height={60}/>
                 </li>
                 <li className='w-1/4 flex justify-center items-center'>
                     <Image src={javaSVG} alt="Java" title='Java' width={60} height={60}/>
@@ -78,14 +80,14 @@ const TAB_DATA = [
         id: "education",
         content: (
           <ul className="list-disc pl-2">
-            <li className='mb-4'>Desarrollo Web FullStack - Henry Bootcamp | 2023-2024</li>
+            <li className='mb-4'>Desarrollo Web FullStack - Henry Bootcamp | 2023-2024 <ArrowTopRightOnSquareIcon width={20} height={20} title='Ver certificado' className='align-top inline cursor-pointer'/></li>
             <li className='mb-4'>Argentina Programa 4.0 | 2022</li>
             <li className='mb-4'>Desarrollo Web FullStack Java – Polo TIC Misiones | 2020/2021</li>
             <li className='mb-4'>Master en JavaScript: JS, jQuery, Angular 8, NodeJS – Udemy | 2019</li>
             <li className='mb-4'>Ingeniería en Computación - Universidad Nacional del Sur - (Incompleto)</li>
           </ul>
         ),
-      },
+    },
       /* {
         title: "Experiencia",
         id: "experience",
@@ -114,7 +116,7 @@ export default function About() {
             
                 <div className='col-span-1 mt-8'>
                     <h2 className='text-4xl font-bold text-white mb-6'>Sobre mi</h2>
-                    <p className='text-base lg:text-lg'>
+                    <p className='leading-loose sm:leading-normal text-base lg:text-lg'>
                         Desarrollador web FullStack Junior, con experiencia en JavaScript, Node.js, React, Express, PostgreSQL, Sequelize y CSS.<br/>
                         Me gusta mucho aprender, por lo que estoy constantemente ampliando mis conocimientos. 
                     </p>
