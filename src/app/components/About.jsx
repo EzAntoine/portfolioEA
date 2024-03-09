@@ -80,7 +80,7 @@ const TAB_DATA = [
         id: "education",
         content: (
           <ul className="list-disc pl-2">
-            <li className='mb-4'>Desarrollo Web FullStack - Henry Bootcamp | 2023-2024 <ArrowTopRightOnSquareIcon width={20} height={20} title='Ver certificado' className='align-top inline cursor-pointer'/></li>
+            <li className='mb-4'>Desarrollo Web FullStack - Henry Bootcamp | 2023-2024</li>
             <li className='mb-4'>Argentina Programa 4.0 | 2022</li>
             <li className='mb-4'>Desarrollo Web FullStack Java – Polo TIC Misiones | 2020/2021</li>
             <li className='mb-4'>Master en JavaScript: JS, jQuery, Angular 8, NodeJS – Udemy | 2019</li>
@@ -88,20 +88,32 @@ const TAB_DATA = [
           </ul>
         ),
     },
-      /* {
-        title: "Experiencia",
-        id: "experience",
+       {
+        title: "Cursos",
+        id: "courses",
         content: (
           <ul className="list-disc pl-2">
-            <li></li>
+            <li>CSS Avanzado - Desafio Latam | 2024</li>
+            <li>Diseño para programacion esencial - Linkedin | 2024</li>
           </ul>
         ),
-      }, */
+      },
 ]
 
 export default function About() {
     const [tab, setTab]=useState("skills");
     const [isPending, startTransition]=useTransition();
+
+    /* const popup = ({ onClose }) => {
+        return (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="bg-white p-8 rounded-lg max-w-md">
+              <button className="absolute top-0 right-0 p-2" onClick={onClose}>Cerrar</button>
+              <img src="/tu-imagen.jpg" alt="Imagen" />
+            </div>
+          </div>
+        );
+      }; */
 
     const handleTabChange = (id)=>{
         startTransition(()=>{
@@ -135,9 +147,9 @@ export default function About() {
                                 {" "}
                                 Educacion{" "}
                         </TabButton>
-                        {/* <TabButton selectTab={()=>handleTabChange("experience")} active={tab==="skills"}>
-                            Experiencia
-                        </TabButton> */}
+                        <TabButton selectTab={()=>handleTabChange("courses")} active={tab==="courses"}>
+                            Cursos
+                        </TabButton>
                     </div>
                     <div className='mt-8'>
                         <h3>
