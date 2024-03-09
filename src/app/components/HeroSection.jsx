@@ -21,7 +21,7 @@ export default function HeroSection() {
                         ]}
                         wrapper="span"
                         speed={50}
-                        repeat={Infinity}
+                        repeat={1}
                     />
                 </h1>
                 <p className='text-[#6c7175] position- text-base sm:text-lg mb-6 lg:text-xl'>
