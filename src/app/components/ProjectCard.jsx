@@ -27,6 +27,8 @@ export default function ProjectCard({ title, description, tecnologies, imgUrl, g
         <div className='text-white rounded-b-xl mt-2 bg-[#181818] py-6 px-4'>
             <h5 className='font-xl font-semibold mb-2'>{title}</h5>
             <p className='text-[#ADB7BE]'>{description}</p>
+            <h6 className='font-xl font-semibold mb-2 mt-4'>Tecnologías:</h6>
+            <p className='text-[#ADB7BE] text-sm'>{tecnologies}</p>
         </div>
     </div>
   )

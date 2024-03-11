@@ -17,8 +17,8 @@ const projectsData = [
     {
         id: 2,
         title: "ONG Vamos!!",
-        description: "Aplicacion web para la ONG Peruana Vamos!!. Permite el registro y login de usuario para realizar reservas de viajes taxi-aeropuerto, ofreciendo vista de viajes realizados, reservas, realizar reseñas y modificación de perfil. Desde el lado administrador ofrece un tablero para visualizar viajes (reservados, pendientes y completados), asignacion de chofer, lista de conductores (permitiendo eliminar lógicamente o poner en estado de descanso), lista de usuarios (permitiendo baneos o asignación de administradores), reseñas, edición de valores de viaje, cuadros estadísticos, descarga de información en excel, mailing y creación de nuevos conductores.",
-        tecnologies: "JavaScript, NodeJs, React, Express, PostgreSQL, Sequelize, Postman, Firebase, Chakra UI, GIT.",
+        description: "Aplicacion web para la ONG Vamos!!. Permite el registro y login de usuario para reservar de viajes taxi-aeropuerto, ofreciendo vista de viajes realizados, reservas, reseñas y modificación de perfil. Desde el lado administrador ofrece tablero para visualizar viajes reservados, pendientes y completados, listado, creacion y asignacion de conductores, permitiendo eliminar lógicamente o poner en estado de descanso, lista de usuarios (permitiendo baneos o asignación de administradores), reseñas, edición de precios, cuadros estadísticos, descarga de información en excel y mailing.",
+        tecnologies: "JavaScript, NodeJs, React, Express, PostgreSQL, Sequelize, Firebase, Nodemailer, Postman, Chakra UI, GIT.",
         image: '/projects/vamos1.jpg',
         tag: ["Todos", "Profesional", "Educativos"],
         gitUrl:'https://github.com/VamosONG/VamosApp',
