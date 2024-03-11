@@ -1,6 +1,7 @@
 "use client"
-import React from 'react'
+import React, {useState} from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag'
 
 const projectsData = [
     {
@@ -47,10 +48,30 @@ const projectsData = [
 
 
 export default function ProjectsSection() {
+    const [tag,setTag] = useState("All");
+
+    const handleTag = (newTag)=>{
+        setTag(newTag)
+    }
+
   return (
     <div>
-      <h2>Proyectos</h2>
-      <div>
+      <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>Proyectos</h2>
+      <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+        <ProjectTag 
+            onClick={handleTag} 
+            name="All" 
+            isSelected={tag === "All"}
+        />
+        <ProjectTag 
+            onClick={handleTag} 
+            name="Web" 
+            isSelected={tag === "Web"}
+        />
+        {/* <button className='rounded-sm border-2 border-lime-500 px-3 py-2 text-xl cursor-pointer'>Todos</button>
+        <button className='rounded-sm border-2 border-slate-600 hover:border-white px-3 py-2 text-xl cursor-pointer'>Web</button> */}
+      </div>
+      <div className='grid md:grid-cols-2 gap-8 md:gap-12'>
         {projectsData.map((project)=> (
             <ProjectCard 
                 key={project.id} 
@@ -59,6 +80,8 @@ export default function ProjectsSection() {
                 tecnologies={project.tecnologies}
                 imgUrl={project.image}
                 tags={project.tag}
+                gitUrl={project.gitUrl}
+                siteUrl={project.siteUrl}
             />
         ))}
       </div>
