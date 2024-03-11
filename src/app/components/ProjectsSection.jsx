@@ -11,7 +11,7 @@ const projectsData = [
         image: '/projects/portfolio1.png',
         tecnologies: "JavaScript, NextJs, Tailwind.",
         tag: ["Todos", "Personales"],
-        gitUrl:'',
+        gitUrl:'https://github.com/EzAntoine/portfolioEA',
         siteUrl:''
     },
     {
@@ -20,9 +20,9 @@ const projectsData = [
         description: "Aplicacion web para la ONG Peruana Vamos!!. Permite el registro y login de usuario para realizar reservas de viajes taxi-aeropuerto, ofreciendo vista de viajes realizados, reservas, realizar reseñas y modificación de perfil. Desde el lado administrador ofrece un tablero para visualizar viajes (reservados, pendientes y completados), asignacion de chofer, lista de conductores (permitiendo eliminar lógicamente o poner en estado de descanso), lista de usuarios (permitiendo baneos o asignación de administradores), reseñas, edición de valores de viaje, cuadros estadísticos, descarga de información en excel, mailing y creación de nuevos conductores.",
         tecnologies: "JavaScript, NodeJs, React, Express, PostgreSQL, Sequelize, Postman, Firebase, Chakra UI, GIT.",
         image: '/projects/vamos1.jpg',
-        tag: ["Todos", "Profesional", "Educativo"],
-        gitUrl:'',
-        siteUrl:''
+        tag: ["Todos", "Profesional", "Educativos"],
+        gitUrl:'https://github.com/VamosONG/VamosApp',
+        siteUrl:'https://www.youtube.com/watch?v=SlAaNeMeo8g'
     },
     {
         id: 3,
@@ -30,8 +30,8 @@ const projectsData = [
         description: "Aplicación web que muestra diferentes razas de perros, permitiendo crear nuevas razas y almacenarlas en base de datos, búsqueda por nombre, ordenamiento de razas alfabéticamente o por peso y filtrado de razas por temperamento u origen.",
         tecnologies: "JavaScript, NodeJs, React, Redux, Express, PostgreSQL, Sequelize, CSS, Postman, GIT.",
         image: '/projects/dogs1.png',
-        tag: ["Todos", "Educativo"],
-        gitUrl:'',
+        tag: ["Todos", "Educativos"],
+        gitUrl:'https://github.com/EzAntoine/ProyectoIndividual-Dogs',
         siteUrl:''
     },
     {
@@ -40,7 +40,7 @@ const projectsData = [
         description: "Aplicación web que muestra personajes de la serie animada Rick and Morty, permitiendo acceso mediante usuario y contraseña, realizar búsqueda de personajes, marcar personajes favoritos, ordenar alfabéticamente y filtrar por género.",
         tecnologies: "JavaScript, NodeJs, React, Redux, Express, PostgreSQL, Sequelize, CSS, Postman, GIT.",
         image: '/projects/rym2.png',
-        tag: ["Todos", "Educativo"],
+        tag: ["Todos", "Educativos"],
         gitUrl:'',
         siteUrl:''
     }
@@ -59,7 +59,7 @@ export default function ProjectsSection() {
   return (
     <div>
       <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>Proyectos</h2>
-      <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+      <div className='text-white flex flex-wrap w-full justify-center items-center gap-2 py-6'>
         <ProjectTag 
             onClick={handleTag} 
             name="Todos" 
