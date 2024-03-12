@@ -12,7 +12,7 @@ const projectsData = [
         tecnologies: "JavaScript, NextJs, Tailwind.",
         tag: ["Todos", "Personales"],
         gitUrl:'https://github.com/EzAntoine/portfolioEA',
-        siteUrl:''
+        siteUrl:'https://ezequielantoine.vercel.app/'
     },
     {
         id: 2,
