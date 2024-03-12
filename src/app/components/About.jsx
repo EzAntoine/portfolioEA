@@ -117,7 +117,7 @@ export default function About() {
             
                 <div className='col-span-1 mt-8'>
                     <h2 className='text-4xl font-bold text-white mb-6'>Sobre mi</h2>
-                    <p className='leading-loose sm:leading-normal text-base lg:text-lg'>
+                    <p className='text-base sm:text-lg mb-6 lg:text-xl'>
                         Desarrollador web FullStack Junior, con experiencia en JavaScript, Node.js, React, Express, PostgreSQL, Sequelize y CSS.<br/>
                         Me gusta mucho aprender, por lo que estoy constantemente ampliando mis conocimientos. 
                     </p>
