@@ -2,6 +2,10 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Link from 'next/link';
+import GithubIcon from "../../../public/github.svg";
+import LinkedinIcon from "../../../public/linkedin.svg";
+import MailIcon from "../../../public/mail.svg";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -39,6 +43,23 @@ export default function HeroSection() {
                         </span>
                     </button>
                 </Link>
+                <div className="container md:hidden p-1 flex flex-wrap items-center">         
+                    <div className="flex flex-wrap gap-2 justify-center w-full">
+                        <div className='flex flex-row '>
+                            <Link href="github.com/EzAntoine">
+                                <Image src={GithubIcon} alt="Github" title='github.com/EzAntoine' className='p-0.5 w-10 h-10 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
+                            </Link>
+                            <Link href="linkedin.com/in/ezequielantoine">
+                                <Image src={LinkedinIcon} alt="LinkedIn" title='linkedin.com/in/ezequielantoine' className='p-0.5 w-10 h-10 rounded-sm bg-white mr-1 transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link href="mailto:ezequielantoine@gmail.com">
+                                <Image src={MailIcon} alt="Email" title='ezequielantoine@gmail.com' className='p-0.5 w-10 h-10 rounded-sm bg-white transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>   
         </div>
     </section>
