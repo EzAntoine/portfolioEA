@@ -30,7 +30,8 @@ export default function HeroSection() {
                     Como desarrollador, combino mis hobbies y vivencias en otros campos con mi capacidad para pensar fuera de la caja para crear soluciones con la idea de ser lo mas simples y efectivas posibles. 
                 </p>
                 <Link 
-                    href="/CV_Ezequiel Antoine.pdf" download
+                    href="/CV_Ezequiel_Antoine.pdf" download
+                    target="_blank"
                     className='flex flex-wrap justify-between'>
                     <button className='px-1 py-1 w-full sm:w-fit rounded-sm mr-4 bg-transparent font-semibold bg-gradient-to-br from-green-500 via-lime-500 to-yellow-500 hover:bg-slate-800 text-white border border-white mt-3'>
                         <span className='block bg-[#121212] hover:bg-slate-800 rounded-sm px-5 py-1'>

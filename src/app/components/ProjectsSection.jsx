@@ -57,44 +57,46 @@ export default function ProjectsSection() {
     const filteredProjects = projectsData.filter((proj)=>proj.tag.includes(tag));
 
   return (
-    <div>
-      <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-12'>Proyectos</h2>
-      <div className='text-white flex flex-wrap w-full justify-center items-center gap-2 py-6'>
-        <ProjectTag 
-            onClick={handleTag} 
-            name="Todos" 
-            isSelected={tag === "Todos"}
-        />
-        <ProjectTag 
-            onClick={handleTag} 
-            name="Profesional" 
-            isSelected={tag === "Profesional"}
-        />
-        <ProjectTag 
-            onClick={handleTag} 
-            name="Educativos" 
-            isSelected={tag === "Educativos"}
-        />
-        <ProjectTag 
-            onClick={handleTag} 
-            name="Personales" 
-            isSelected={tag === "Personales"}
-        />
-      </div>
-      <div className='grid md:grid-cols-2 gap-8 md:gap-12'>
-        {filteredProjects.map((project)=> (
-            <ProjectCard 
-                key={project.id} 
-                title={project.title}
-                description={project.description}
-                tecnologies={project.tecnologies}
-                imgUrl={project.image}
-                tags={project.tag}
-                gitUrl={project.gitUrl}
-                siteUrl={project.siteUrl}
+    <section id='projects'>
+        <div>
+        <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-12'>Proyectos</h2>
+        <div className='text-white flex flex-wrap w-full justify-center items-center gap-2 py-6'>
+            <ProjectTag 
+                onClick={handleTag} 
+                name="Todos" 
+                isSelected={tag === "Todos"}
             />
-        ))}
-      </div>
-    </div>
+            <ProjectTag 
+                onClick={handleTag} 
+                name="Profesional" 
+                isSelected={tag === "Profesional"}
+            />
+            <ProjectTag 
+                onClick={handleTag} 
+                name="Educativos" 
+                isSelected={tag === "Educativos"}
+            />
+            <ProjectTag 
+                onClick={handleTag} 
+                name="Personales" 
+                isSelected={tag === "Personales"}
+            />
+        </div>
+        <div className='grid md:grid-cols-2 gap-8 md:gap-12'>
+            {filteredProjects.map((project)=> (
+                <ProjectCard 
+                    key={project.id} 
+                    title={project.title}
+                    description={project.description}
+                    tecnologies={project.tecnologies}
+                    imgUrl={project.image}
+                    tags={project.tag}
+                    gitUrl={project.gitUrl}
+                    siteUrl={project.siteUrl}
+                />
+            ))}
+        </div>
+        </div>
+    </section>
   )
 }

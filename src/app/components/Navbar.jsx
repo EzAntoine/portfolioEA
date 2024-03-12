@@ -17,8 +17,7 @@ const navLinks = [
     {
         title: "Proyectos",
         path: "#projects" 
-    },
-    
+    },    
 ]
 
 export default function Navbar() {
@@ -56,15 +55,15 @@ export default function Navbar() {
                             <div className="flex flex-wrap gap-2 justify-center w-full">
                                 <div className='flex flex-row '>
                                     <Link href="github.com/EzAntoine">
-                                        <Image src={GithubIcon} alt="Github" className='p-0.5 w-10 h-10 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
+                                        <Image src={GithubIcon} alt="Github" title='github.com/EzAntoine' className='p-0.5 w-10 h-10 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
                                     </Link>
                                     <Link href="linkedin.com/in/ezequielantoine">
-                                        <Image src={LinkedinIcon} alt="LinkedIn" className='p-0.5 w-10 h-10 rounded-sm bg-white mr-1 transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
+                                        <Image src={LinkedinIcon} alt="LinkedIn" title='linkedin.com/in/ezequielantoine' className='p-0.5 w-10 h-10 rounded-sm bg-white mr-1 transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link href="ezequielantoine@gmail.com">
-                                        <Image src={MailIcon} alt="Email" className='p-0.5 w-10 h-10 rounded-sm bg-white transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
+                                    <Link href="mailto:ezequielantoine@gmail.com">
+                                        <Image src={MailIcon} alt="Email" title='ezequielantoine@gmail.com' className='p-0.5 w-10 h-10 rounded-sm bg-white transform hover:scale-110 transition-transform duration-300 ease-in-out'/>
                                     </Link>
                                 </div>
                             </div>
