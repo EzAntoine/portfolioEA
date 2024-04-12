@@ -104,15 +104,15 @@ const TAB_DATA = [
               src={htmlSVG}
               alt="HTML"
               title="HTML"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
           </div>
         </li>
         <li className="w-1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
-            <Image src={cssSVG} alt="CSS" title="CSS" width={60} height={60} />
+            <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
             <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
           </div>
         </li>
@@ -122,8 +122,8 @@ const TAB_DATA = [
               src={tailwindSVG}
               alt="Tailwind CSS"
               title="Tailwind CSS"
-              width={60}
-              height={60}
+              width={70}
+              height={70}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Tailwind CSS</p>
           </div>
@@ -134,8 +134,8 @@ const TAB_DATA = [
               src={javaSVG}
               alt="Java"
               title="Java"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
           </div>
@@ -171,8 +171,8 @@ const TAB_DATA = [
               src={firebaseSVG}
               alt="Firebase"
               title="Firebase"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
           </div>
@@ -217,9 +217,6 @@ const TAB_DATA = [
           Desarrollo Web FullStack Java – Polo TIC Misiones | 2020/2021
         </li>
         <li className="mb-4">
-          Master en JavaScript: JS, jQuery, Angular 8, NodeJS – Udemy | 2019
-        </li>
-        <li className="mb-4">
           Ingeniería en Computación - Universidad Nacional del Sur -
           (Incompleto)
         </li>
@@ -231,9 +228,20 @@ const TAB_DATA = [
     id: "courses",
     content: (
       <ul className="list-disc pl-2">
+        <li className="mb-4">
+          Curso Intensivo Backend con NestJS (Swagger, TypeORM, Mongoose) – Hedy
+          Software | 2024 (En curso)
+        </li>
+        <li className="mb-4">
+          Curso de Java Fullstack Completo (Springboot, Hibernate, JWT, API
+          Rest) – ATL Academy | 2024 (En curso)
+        </li>
         <li className="mb-4">CSS Avanzado - Desafio Latam | 2024</li>
         <li className="mb-4">
-          Diseño para programacion esencial - Linkedin | 2024
+          Diseño para programacion esencial (UX) - Linkedin | 2024
+        </li>
+        <li className="mb-4">
+          Master en JavaScript: JS, jQuery, Angular 8, NodeJS – Udemy | 2019
         </li>
       </ul>
     ),
