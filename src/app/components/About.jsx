@@ -236,6 +236,7 @@ const TAB_DATA = [
           Curso de Java Fullstack Completo (Springboot, Hibernate, JWT, API
           Rest) – ATL Academy | 2024 (En curso)
         </li>
+        <li className="mb-4">Curso de Fundamentos de Python – Platzi | 2024</li>
         <li className="mb-4">CSS Avanzado - Desafio Latam | 2024</li>
         <li className="mb-4">
           Diseño para programacion esencial (UX) - Linkedin | 2024
