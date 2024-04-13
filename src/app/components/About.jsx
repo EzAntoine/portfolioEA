@@ -268,7 +268,8 @@ export default function About() {
           <h2 className="text-4xl font-bold text-white mb-6">Sobre mi</h2>
           <p className="text-base sm:text-lg mb-6 lg:text-xl">
             Desarrollador web FullStack Junior, con experiencia en JavaScript,
-            Node.js, React, Express, PostgreSQL, Sequelize y CSS.
+            Node.js, React, NextJs, Java, Express, PostgreSQL, Sequelize,
+            Tailwind y CSS.
             <br />
             Me gusta mucho aprender, por lo que estoy constantemente ampliando
             mis conocimientos.

@@ -51,7 +51,7 @@ export default function HeroSection() {
               </span>
             </button>
           </Link>
-          <div className="container md:hidden p-1 flex flex-wrap items-center">
+          <div className="container md:hidden p-1 flex flex-wrap items-center mt-4">
             <div className="flex flex-wrap gap-2 justify-center w-full">
               <div className="flex flex-row ">
                 <Link href="https://github.com/EzAntoine" target="_blank">
