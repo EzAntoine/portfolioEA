@@ -17,6 +17,11 @@ import reduxSVG from "../../../public/tecnologiesSVG/redux.svg";
 import postmanSVG from "../../../public/tecnologiesSVG/postman.svg";
 import sequelizeSVG from "../../../public/tecnologiesSVG/sequelize.svg";
 import tailwindSVG from "../../../public/tecnologiesSVG/tailwindcss.svg";
+import springSVG from "../../../public/tecnologiesSVG/spring.svg";
+import hibernateSVG from "../../../public/tecnologiesSVG/Hibernate.svg";
+import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
+import railwaySVG from "../../../public/tecnologiesSVG/Railway_dark.svg";
+import vercelSVG from "../../../public/tecnologiesSVG/vercel_dark.svg";
 
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
@@ -89,13 +94,134 @@ const TAB_DATA = [
         <li className="w-1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={nextSVG}
-              alt="Next.js"
-              title="Next.js"
+              src={sequelizeSVG}
+              alt="Sequelize"
+              title="Sequelize"
               width={60}
               height={60}
             />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Sequelize</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={javaSVG}
+              alt="Java"
+              title="Java"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={springSVG}
+              alt="Spring Boot"
+              title="Spring Boot"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Spring Boot</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={hibernateSVG}
+              alt="Hibernate"
+              title="Hibernate"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Hibernate</p>
+          </div>
+        </li>
+
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={postgreSVG}
+              alt="PostgreSQL"
+              title="PostgreSQL"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>PostgreSQL</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={dockerSVG}
+              alt="Docker"
+              title="Docker"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={firebaseSVG}
+              alt="Firebase"
+              title="Firebase"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={vercelSVG}
+              alt="Vercel"
+              title="Vercel"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Vercel</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={railwaySVG}
+              alt="Railway"
+              title="Railway"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Railway</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={githubSVG}
+              alt="Github"
+              title="Github"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Git</p>
+          </div>
+        </li>
+        <li className="w-1/4 flex justify-center items-center">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={postmanSVG}
+              alt="Postman"
+              title="Postman"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
           </div>
         </li>
         <li className="w-1/4 flex justify-center items-center">
@@ -131,74 +257,13 @@ const TAB_DATA = [
         <li className="w-1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={javaSVG}
-              alt="Java"
-              title="Java"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
-          </div>
-        </li>
-        <li className="w-1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={postgreSVG}
-              alt="PostgreSQL"
-              title="PostgreSQL"
+              src={nextSVG}
+              alt="Next.js"
+              title="Next.js"
               width={60}
               height={60}
             />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>PostgreSQL</p>
-          </div>
-        </li>
-        <li className="w-1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={sequelizeSVG}
-              alt="Sequelize"
-              title="Sequelize"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Sequelize</p>
-          </div>
-        </li>
-
-        <li className="w-1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={firebaseSVG}
-              alt="Firebase"
-              title="Firebase"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
-          </div>
-        </li>
-        <li className="w-1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={githubSVG}
-              alt="Github"
-              title="Github"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Git</p>
-          </div>
-        </li>
-        <li className="w-1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={postmanSVG}
-              alt="Postman"
-              title="Postman"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
+            <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
           </div>
         </li>
       </ul>
@@ -235,6 +300,10 @@ const TAB_DATA = [
         <li className="mb-4">
           Curso de Java Fullstack Completo (Springboot, Hibernate, JWT, API
           Rest) – ATL Academy | 2024 (En curso)
+        </li>
+        <li className="mb-4">
+          JAVA desde cero | Curso con Spring Boot, Hibernate, PostgreSQL, Docker
+          y Railway - Sergie Code | 2024.
         </li>
         <li className="mb-4">Curso de Fundamentos de Python – Platzi | 2024</li>
         <li className="mb-4">CSS Avanzado - Desafio Latam | 2024</li>
