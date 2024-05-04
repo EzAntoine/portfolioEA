@@ -61,13 +61,13 @@ export default function Navbar() {
             ))}
             <div className="container p-1 flex flex-wrap items-center">
               <div className="flex flex-wrap gap-2 justify-center w-full">
-                <div className="flex flex-row ">
+                <div className="flex flex-row items-center">
                   <Link href="https://github.com/EzAntoine" target="_blank">
                     <Image
                       src={GithubIcon}
                       alt="Github"
                       title="github.com/EzAntoine"
-                      className="p-0.5 w-10 h-10 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out"
+                      className="p-0.5 w-8 h-8 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out"
                     />
                   </Link>
                   <Link
@@ -78,7 +78,7 @@ export default function Navbar() {
                       src={LinkedinIcon}
                       alt="LinkedIn"
                       title="linkedin.com/in/ezequielantoine"
-                      className="p-0.5 w-10 h-10 rounded-sm bg-white mr-1 transform hover:scale-110 transition-transform duration-300 ease-in-out"
+                      className="p-0.5 w-8 h-8 rounded-sm bg-white mr-1 transform hover:scale-110 transition-transform duration-300 ease-in-out"
                     />
                   </Link>
                 </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
                       src={MailIcon}
                       alt="Email"
                       title="ezequielantoine@gmail.com"
-                      className="p-0.5 w-10 h-10 rounded-sm bg-white transform hover:scale-110 transition-transform duration-300 ease-in-out"
+                      className="p-0.5 w-8 h-8 rounded-sm bg-white transform hover:scale-110 transition-transform duration-300 ease-in-out"
                     />
                   </Link>
                 </div>
