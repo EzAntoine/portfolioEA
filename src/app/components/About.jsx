@@ -31,7 +31,7 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-none flex flex-wrap justify-center gap-4">
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={javascriptSVG}
@@ -43,7 +43,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>JavaScript</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={reactSVG}
@@ -55,7 +55,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>React</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={reduxSVG}
@@ -67,7 +67,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Redux</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={nodejsSVG}
@@ -79,7 +79,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>NodeJs</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={expressSVG}
@@ -91,7 +91,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Express</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={sequelizeSVG}
@@ -103,7 +103,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Sequelize</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={javaSVG}
@@ -115,7 +115,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={springSVG}
@@ -127,7 +127,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Spring Boot</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={hibernateSVG}
@@ -140,7 +140,7 @@ const TAB_DATA = [
           </div>
         </li>
 
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={postgreSVG}
@@ -152,7 +152,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>PostgreSQL</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={dockerSVG}
@@ -164,7 +164,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={firebaseSVG}
@@ -176,7 +176,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={vercelSVG}
@@ -188,7 +188,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Vercel</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={railwaySVG}
@@ -200,7 +200,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Railway</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={githubSVG}
@@ -212,7 +212,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Git</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={postmanSVG}
@@ -224,7 +224,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={htmlSVG}
@@ -236,13 +236,13 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
             <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={tailwindSVG}
@@ -254,7 +254,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Tailwind CSS</p>
           </div>
         </li>
-        <li className="w-1/6 flex justify-center items-center">
+        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
           <div style={{ textAlign: "center" }}>
             <Image
               src={nextSVG}
