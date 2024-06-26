@@ -301,8 +301,8 @@ const TAB_DATA = [
           PHP 8 desde cero – Midulive (YouTube) | 2024 (En curso)
         </li>
         <li className="mb-4">
-          JAVA desde cero | Curso con Spring Boot, Hibernate, PostgreSQL, Docker
-          y Railway - Sergie Code | 2024.
+          JAVA desde cero | Spring Boot, Hibernate, PostgreSQL, Docker y Railway
+          - Sergie Code (YouTube) | 2024
         </li>
         <li className="mb-4">Curso de Fundamentos de Python – Platzi | 2024</li>
         <li className="mb-4">CSS Avanzado - Desafio Latam | 2024</li>
