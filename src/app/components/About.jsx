@@ -275,6 +275,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li className="mb-4">
+          Curso Intensivo Backend con NestJS (Swagger, TypeORM, Mongoose) – Hedy
+          Software | 2024
+        </li>
+        <li className="mb-4">
           Desarrollo Web FullStack - Henry Bootcamp | 2023-2024
         </li>
         <li className="mb-4">Argentina Programa 4.0 | 2022</li>
@@ -294,12 +298,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li className="mb-4">
-          Curso Intensivo Backend con NestJS (Swagger, TypeORM, Mongoose) – Hedy
-          Software | 2024 (En curso)
-        </li>
-        <li className="mb-4">
-          Curso de Java Fullstack Completo (Springboot, Hibernate, JWT, API
-          Rest) – ATL Academy | 2024 (En curso)
+          PHP 8 desde cero – Midulive (YouTube) | 2024 (En curso)
         </li>
         <li className="mb-4">
           JAVA desde cero | Curso con Spring Boot, Hibernate, PostgreSQL, Docker
