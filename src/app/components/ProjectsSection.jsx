@@ -14,8 +14,7 @@ const projectsData = [
     image: "/projects/crudjava.jpg",
     tag: ["Todos", "Educativos"],
     gitUrl: "https://github.com/EzAntoine/java-railway-crud-apirest",
-    siteUrl:
-      "https://java-railway-crud-apirest-production-0cef.up.railway.app/productos",
+    siteUrl: "",
   },
   {
     id: 2,
