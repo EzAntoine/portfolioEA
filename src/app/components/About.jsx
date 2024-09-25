@@ -22,6 +22,11 @@ import hibernateSVG from "../../../public/tecnologiesSVG/Hibernate.svg";
 import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
 import railwaySVG from "../../../public/tecnologiesSVG/Railway_dark.svg";
 import vercelSVG from "../../../public/tecnologiesSVG/vercel_dark.svg";
+import nestSVG from "../../../public/tecnologiesSVG/nestJs.svg";
+import mongoSVG from "../../../public/tecnologiesSVG/mongodb.svg";
+import typeormSVG from "../../../public/tecnologiesSVG/typeorm.svg";
+import mysqlSVG from "../../../public/tecnologiesSVG/mysql.svg";
+import typescriptSVG from "../../../public/tecnologiesSVG/typescript.svg";
 
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
@@ -30,8 +35,8 @@ const TAB_DATA = [
     title: "Habilidades",
     id: "skills",
     content: (
-      <ul className="list-none flex flex-wrap justify-center gap-4">
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
+      <ul className="flex flex-wrap justify-center gap-4 list-none">
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={javascriptSVG}
@@ -43,7 +48,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>JavaScript</p>
           </div>
         </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={reactSVG}
@@ -55,7 +60,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>React</p>
           </div>
         </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={reduxSVG}
@@ -67,194 +72,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Redux</p>
           </div>
         </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={nodejsSVG}
-              alt="Node.js"
-              title="Node.js"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>NodeJs</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={expressSVG}
-              alt="Express.js"
-              title="Express.js"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Express</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={sequelizeSVG}
-              alt="Sequelize"
-              title="Sequelize"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Sequelize</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={javaSVG}
-              alt="Java"
-              title="Java"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={springSVG}
-              alt="Spring Boot"
-              title="Spring Boot"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Spring Boot</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={hibernateSVG}
-              alt="Hibernate"
-              title="Hibernate"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Hibernate</p>
-          </div>
-        </li>
-
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={postgreSVG}
-              alt="PostgreSQL"
-              title="PostgreSQL"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>PostgreSQL</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={dockerSVG}
-              alt="Docker"
-              title="Docker"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={firebaseSVG}
-              alt="Firebase"
-              title="Firebase"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={vercelSVG}
-              alt="Vercel"
-              title="Vercel"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Vercel</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={railwaySVG}
-              alt="Railway"
-              title="Railway"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Railway</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={githubSVG}
-              alt="Github"
-              title="Github"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Git</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={postmanSVG}
-              alt="Postman"
-              title="Postman"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={htmlSVG}
-              alt="HTML"
-              title="HTML"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={tailwindSVG}
-              alt="Tailwind CSS"
-              title="Tailwind CSS"
-              width={70}
-              height={70}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Tailwind CSS</p>
-          </div>
-        </li>
-        <li className="md:w-1/6 sm:1/4 flex justify-center items-center">
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={nextSVG}
@@ -266,6 +84,254 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
           </div>
         </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={tailwindSVG}
+              alt="Tailwind CSS"
+              title="Tailwind CSS"
+              width={70}
+              height={70}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Tailwind CSS</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={typescriptSVG}
+              alt="TypeScript.js"
+              title="TypeScript.js"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>TypeScript</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={nodejsSVG}
+              alt="Node.js"
+              title="Node.js"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>NodeJs</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={expressSVG}
+              alt="Express.js"
+              title="Express.js"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Express</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={nestSVG}
+              alt="NestJs"
+              title="NestJs"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>NestJs</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={javaSVG}
+              alt="Java"
+              title="Java"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
+          </div>
+        </li>
+        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={springSVG}
+              alt="Spring Boot"
+              title="Spring Boot"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Spring Boot</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={hibernateSVG}
+              alt="Hibernate"
+              title="Hibernate"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Hibernate</p>
+          </div>
+        </li> */}
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={mongoSVG}
+              alt="MongoDB"
+              title="MongoDB"
+              width={70}
+              height={70}
+              className="my-3"
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>MongoDB</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={sequelizeSVG}
+              alt="Sequelize"
+              title="Sequelize"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Sequelize</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={typeormSVG}
+              alt="TypeORM"
+              title="TypeORM"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>TypeORM</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={mysqlSVG}
+              alt="MySQL"
+              title="MySQL"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>MySQL</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={postgreSVG}
+              alt="PostgreSQL"
+              title="PostgreSQL"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>PostgreSQL</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={htmlSVG}
+              alt="HTML"
+              title="HTML"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={githubSVG}
+              alt="Github"
+              title="Github"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Git</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={postmanSVG}
+              alt="Postman"
+              title="Postman"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={dockerSVG}
+              alt="Docker"
+              title="Docker"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={firebaseSVG}
+              alt="Firebase"
+              title="Firebase"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={vercelSVG}
+              alt="Vercel"
+              title="Vercel"
+              width={50}
+              height={50}
+              className="my-2"
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Vercel</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={railwaySVG}
+              alt="Railway"
+              title="Railway"
+              width={50}
+              height={50}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Railway</p>
+          </div>
+        </li>
       </ul>
     ),
   },
@@ -273,7 +339,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="pl-2 list-disc">
         <li className="mb-4">
           Curso Intensivo Backend con NestJS (Swagger, TypeORM, Mongoose) – Hedy
           Software | 2024
@@ -296,7 +362,7 @@ const TAB_DATA = [
     title: "Cursos",
     id: "courses",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="pl-2 list-disc">
         <li className="mb-4">
           PHP 8 desde cero – Midulive (YouTube) | 2024 (En curso)
         </li>
@@ -329,22 +395,9 @@ export default function About() {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-1 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        {/* <Image/> 
-
+      <div className="items-start gap-8 px-4 py-8 md:grid md:grid-cols-1 xl:gap-16 sm:py-16 xl:px-16">
         <div className="col-span-1 mt-8">
-          <h2 className="text-4xl font-bold text-white mb-6">Sobre mi</h2>
-          <p className="text-base sm:text-lg mb-6 lg:text-xl">
-            Desarrollador web FullStack Junior, con experiencia en JavaScript,
-            Node.js, React, NextJs, Java, Express, PostgreSQL, Sequelize,
-            Tailwind y CSS.
-            <br />
-            Me gusta mucho aprender, por lo que estoy constantemente ampliando
-            mis conocimientos.
-          </p>
-        </div> */}
-        <div className="col-span-1 mt-8">
-          <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-12">
+          <h2 className="mt-4 mb-4 text-4xl font-bold text-center text-white md:mb-12">
             Sobre mi
           </h2>
           <div className="col-span-1">
