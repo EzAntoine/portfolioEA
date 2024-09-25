@@ -22,7 +22,7 @@ import hibernateSVG from "../../../public/tecnologiesSVG/Hibernate.svg";
 import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
 import railwaySVG from "../../../public/tecnologiesSVG/Railway_dark.svg";
 import vercelSVG from "../../../public/tecnologiesSVG/vercel_dark.svg";
-import nestSVG from "../../../public/tecnologiesSVG/nestJs.svg";
+import nestSVG from "../../../public/tecnologiesSVG/nestjs.svg";
 import mongoSVG from "../../../public/tecnologiesSVG/mongodb.svg";
 import typeormSVG from "../../../public/tecnologiesSVG/typeorm.svg";
 import mysqlSVG from "../../../public/tecnologiesSVG/mysql.svg";
