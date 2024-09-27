@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Portfolio personal - Ezequiel Antoine"
+            content="Portfolio personal de Ezequiel Antoine | Desarrollador con experiencia en JavaScript, NodeJs, NestJs React y NextJs."
           ></meta>
           <meta
             property="og:title"
@@ -15,9 +15,10 @@ class MyDocument extends Document {
           ></meta>
           <meta
             property="og:description"
-            content="Portfolio personal - Ezequiel Antoine"
+            content="Portfolio personal de Ezequiel Antoine | Desarrollador con experiencia en JavaScript, NodeJs, NestJs React y NextJs."
           ></meta>
           <meta property="og:image" content="/public/preview.png"></meta>
+          <meta property="og:type" content="website" />s
           <link
             rel="icon"
             href="/favicon.ico"

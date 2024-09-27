@@ -12,14 +12,15 @@ export default function Home() {
         <title>Ezequiel Antoine - Portfolio</title>
         <meta
           name="description"
-          content="Portfolio personal - Ezequiel Antoine"
+          content="Portfolio personal de Ezequiel Antoine | Desarrollador con experiencia en JavaScript, NodeJs, NestJs React y NextJs."
         ></meta>
         <meta property="og:title" content="Ezequiel Antoine - Portfolio"></meta>
         <meta
           property="og:description"
-          content="Portfolio personal - Ezequiel Antoine"
+          content="Portfolio personal de Ezequiel Antoine | Desarrollador con experiencia en JavaScript, NodeJs, NestJs React y NextJs."
         ></meta>
-        <meta property="og:image" content="/public/preview.png"></meta>
+        <meta property="og:image" content="/preview.png"></meta>
+        <meta property="og:type" content="website" />
       </Head>
       <div className="container px-12 py-4 mx-auto">
         <Navbar />
