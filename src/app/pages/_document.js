@@ -5,7 +5,19 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="Ezequiel Antoine Portfolio" content="" />
+          <meta
+            name="description"
+            content="Portfolio personal - Ezequiel Antoine"
+          ></meta>
+          <meta
+            property="og:title"
+            content="Ezequiel Antoine - Portfolio"
+          ></meta>
+          <meta
+            property="og:description"
+            content="Portfolio personal - Ezequiel Antoine"
+          ></meta>
+          <meta property="og:image" content="/public/preview.png"></meta>
           <link
             rel="icon"
             href="/favicon.ico"
