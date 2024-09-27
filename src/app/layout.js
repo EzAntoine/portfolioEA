@@ -7,7 +7,7 @@ export const metadata = {
   title: "Portfolio - Ezequiel Antoine",
   description:
     "Desarrollador con experiencia en JavaScript, NodeJs, NestJs React y NextJs.",
-  image: "/preview.png",
+  image: "/public/preview.png",
   type: "website",
 };
 
