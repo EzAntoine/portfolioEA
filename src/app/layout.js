@@ -5,8 +5,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio - Ezequiel Antoine",
-  description: "Información sobre proyectos realizados, habilidades y cursos.",
-  image: '/public/preview.png'
+  description:
+    "Desarrollador con experiencia en JavaScript, NodeJs, NestJs React y NextJs.",
+  image: "/preview.png",
+  type: "website",
 };
 
 export default function RootLayout({ children }) {
