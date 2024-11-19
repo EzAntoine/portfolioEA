@@ -9,10 +9,10 @@ module.exports = {
             value:
               "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';",
           },
-          {
+          /* {
             key: "X-Frame-Options",
             value: "DENY",
-          },
+          }, */
           {
             key: "X-Content-Type-Options",
             value: "nosniff",
