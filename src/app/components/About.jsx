@@ -364,8 +364,18 @@ const TAB_DATA = [
     content: (
       <ul className="pl-2 list-disc">
         <li className="mb-4">
-          PHP 8 desde cero – Midulive (YouTube) | 2024 (En curso)
+          Python Avanzado: Programación Orientada a Objetos (POO) - Sergie Code
+          (YouTube) | 2024
         </li>
+        <li className="mb-4">
+          Python desde cero | Curso completo Pandas y despliegue de API REST -
+          Sergie Code (YouTube) | 2024
+        </li>
+        <li className="mb-4">
+          Hacking Ético: OF&DF 4.0 Informática (Ciberseguridad) - ExorciseThat |
+          2024
+        </li>
+        <li className="mb-4">PHP 8 desde cero – Midulive (YouTube) | 2024</li>
         <li className="mb-4">
           JAVA desde cero | Spring Boot, Hibernate, PostgreSQL, Docker y Railway
           - Sergie Code (YouTube) | 2024
