@@ -27,6 +27,7 @@ import mongoSVG from "../../../public/tecnologiesSVG/mongodb.svg";
 import typeormSVG from "../../../public/tecnologiesSVG/typeorm.svg";
 import mysqlSVG from "../../../public/tecnologiesSVG/mysql.svg";
 import typescriptSVG from "../../../public/tecnologiesSVG/typescript.svg";
+import viteSVG from "../../../public/tecnologiesSVG/vitejs.svg";
 
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
@@ -75,13 +76,19 @@ const TAB_DATA = [
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={nextSVG}
-              alt="Next.js"
-              title="Next.js"
-              width={60}
-              height={60}
+              src={htmlSVG}
+              alt="HTML"
+              title="HTML"
+              width={50}
+              height={50}
             />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
+            <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
           </div>
         </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
@@ -96,6 +103,31 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Tailwind CSS</p>
           </div>
         </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={viteSVG}
+              alt="Vite"
+              title="Vite"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Vite</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={nextSVG}
+              alt="Next.js"
+              title="Next.js"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
+          </div>
+        </li>
+
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -241,24 +273,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>PostgreSQL</p>
           </div>
         </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={htmlSVG}
-              alt="HTML"
-              title="HTML"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
-          </div>
-        </li>
+
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -283,7 +298,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
           </div>
         </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={dockerSVG}
@@ -294,7 +309,7 @@ const TAB_DATA = [
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
           </div>
-        </li>
+        </li> */}
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -320,7 +335,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Vercel</p>
           </div>
         </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={railwaySVG}
@@ -331,7 +346,7 @@ const TAB_DATA = [
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Railway</p>
           </div>
-        </li>
+        </li> */}
       </ul>
     ),
   },
@@ -391,6 +406,23 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "Experiencia laboral",
+    id: "experience",
+    content: (
+      <ul className="pl-2 list-disc">
+        <li className="mb-4">
+          Desarrollador Fullstack - Lexy (Chile) | Dic. 2024 - Actualidad.
+          <ul>
+            - Principalmente orientado a frontend, utilizando Vite, React,
+            Redux, CSS Modules.
+          </ul>
+          <ul>- Control de versiones con Git y Github.</ul>
+          <ul>- Despliegue en Vercel.</ul>
+        </li>
+      </ul>
+    ),
+  },
 ];
 
 export default function About() {
@@ -419,6 +451,13 @@ export default function About() {
               >
                 {" "}
                 Habilidades{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("experience")}
+                active={tab === "experience"}
+              >
+                {" "}
+                Experiencia laboral{" "}
               </TabButton>
               <TabButton
                 selectTab={() => handleTabChange("education")}
