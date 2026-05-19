@@ -260,7 +260,7 @@ const TAB_DATA = [
           - Sergie Code (YouTube) | 2024
         </li>
         <li className="mb-4">Curso de Fundamentos de Python – Platzi | 2024</li>
-        <li className="mb-4">CSS Avanzado - Desafio Latam | 2024</li>
+        <li classNamse="mb-4">CSS Avanzado - Desafio Latam | 2024</li>
         <li className="mb-4">
           Diseño para programacion esencial (UX) - Linkedin | 2024
         </li>
