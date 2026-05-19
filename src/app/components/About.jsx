@@ -2,32 +2,22 @@
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
 import Image from "next/image";
-import javascriptSVG from "../../../public/tecnologiesSVG/javascript.svg";
+import typescriptSVG from "../../../public/tecnologiesSVG/typescript.svg";
 import nodejsSVG from "../../../public/tecnologiesSVG/nodejs.svg";
 import cssSVG from "../../../public/tecnologiesSVG/css.svg";
 import expressSVG from "../../../public/tecnologiesSVG/Express.js.dark.svg";
-import firebaseSVG from "../../../public/tecnologiesSVG/firebase.svg";
 import githubSVG from "../../../public/tecnologiesSVG/github.svg";
-import htmlSVG from "../../../public/tecnologiesSVG/html5.svg";
 import javaSVG from "../../../public/tecnologiesSVG/java.svg";
 import nextSVG from "../../../public/tecnologiesSVG/nextjs_icon_dark.svg";
 import postgreSVG from "../../../public/tecnologiesSVG/postgresql.svg";
 import reactSVG from "../../../public/tecnologiesSVG/react.svg";
-import reduxSVG from "../../../public/tecnologiesSVG/redux.svg";
-import postmanSVG from "../../../public/tecnologiesSVG/postman.svg";
-import sequelizeSVG from "../../../public/tecnologiesSVG/sequelize.svg";
 import tailwindSVG from "../../../public/tecnologiesSVG/tailwindcss.svg";
-import springSVG from "../../../public/tecnologiesSVG/spring.svg";
-import hibernateSVG from "../../../public/tecnologiesSVG/Hibernate.svg";
-import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
-import railwaySVG from "../../../public/tecnologiesSVG/Railway_dark.svg";
 import vercelSVG from "../../../public/tecnologiesSVG/vercel_dark.svg";
 import nestSVG from "../../../public/tecnologiesSVG/nestjs.svg";
 import mongoSVG from "../../../public/tecnologiesSVG/mongodb.svg";
-import typeormSVG from "../../../public/tecnologiesSVG/typeorm.svg";
-import mysqlSVG from "../../../public/tecnologiesSVG/mysql.svg";
-import typescriptSVG from "../../../public/tecnologiesSVG/typescript.svg";
 import viteSVG from "../../../public/tecnologiesSVG/vitejs.svg";
+import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
+import figmaSVG from "../../../public/tecnologiesSVG/figma.svg";
 
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
@@ -40,13 +30,13 @@ const TAB_DATA = [
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={javascriptSVG}
-              alt="JavaScript"
-              title="JavaScript"
+              src={typescriptSVG}
+              alt="TypeScript"
+              title="TypeScript"
               width={60}
               height={60}
             />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>JavaScript</p>
+            <p style={{ fontSize: "0.8em", margin: "0" }}>TypeScript</p>
           </div>
         </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
@@ -64,36 +54,6 @@ const TAB_DATA = [
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={reduxSVG}
-              alt="Redux"
-              title="Redux"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Redux</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={htmlSVG}
-              alt="HTML"
-              title="HTML"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>HTML</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image src={cssSVG} alt="CSS" title="CSS" width={50} height={50} />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>CSS</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
               src={tailwindSVG}
               alt="Tailwind CSS"
               title="Tailwind CSS"
@@ -101,6 +61,18 @@ const TAB_DATA = [
               height={70}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Tailwind CSS</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={figmaSVG}
+              alt="Figma"
+              title="Figma"
+              width={40}
+              height={40}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Figma</p>
           </div>
         </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
@@ -125,19 +97,6 @@ const TAB_DATA = [
               height={60}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
-          </div>
-        </li>
-
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={typescriptSVG}
-              alt="TypeScript.js"
-              title="TypeScript.js"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>TypeScript</p>
           </div>
         </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
@@ -188,30 +147,18 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
           </div>
         </li>
-        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={springSVG}
-              alt="Spring Boot"
-              title="Spring Boot"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Spring Boot</p>
-          </div>
-        </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={hibernateSVG}
-              alt="Hibernate"
-              title="Hibernate"
+              src={dockerSVG}
+              alt="Docker"
+              title="Docker"
               width={50}
               height={50}
             />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Hibernate</p>
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
           </div>
-        </li> */}
+        </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -225,42 +172,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>MongoDB</p>
           </div>
         </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={sequelizeSVG}
-              alt="Sequelize"
-              title="Sequelize"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Sequelize</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={typeormSVG}
-              alt="TypeORM"
-              title="TypeORM"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>TypeORM</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={mysqlSVG}
-              alt="MySQL"
-              title="MySQL"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>MySQL</p>
-          </div>
-        </li>
+
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -289,42 +201,6 @@ const TAB_DATA = [
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={postmanSVG}
-              alt="Postman"
-              title="Postman"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Postman</p>
-          </div>
-        </li>
-        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={dockerSVG}
-              alt="Docker"
-              title="Docker"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Docker</p>
-          </div>
-        </li> */}
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={firebaseSVG}
-              alt="Firebase"
-              title="Firebase"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Firebase</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
               src={vercelSVG}
               alt="Vercel"
               title="Vercel"
@@ -335,18 +211,6 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>Vercel</p>
           </div>
         </li>
-        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
-              src={railwaySVG}
-              alt="Railway"
-              title="Railway"
-              width={50}
-              height={50}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Railway</p>
-          </div>
-        </li> */}
       </ul>
     ),
   },
@@ -414,9 +278,10 @@ const TAB_DATA = [
         <li className="mb-4">
           Desarrollador Fullstack - Lexy (Chile) | Dic. 2024 - Actualidad.
           <ul>
-            - Principalmente orientado a frontend, utilizando Vite, React,
-            Redux, CSS Modules.
+            - Frontend: Vite, React, TypeScript, Tailwind CSS, CSS Modules,
+            Redux, Zustand.
           </ul>
+          <ul>- Backend: Python, FastAPI, SQLAlchemy, PostgreSQL, Docker.</ul>
           <ul>- Control de versiones con Git y Github.</ul>
           <ul>- Despliegue en Vercel.</ul>
         </li>
