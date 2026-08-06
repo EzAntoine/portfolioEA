@@ -9,38 +9,48 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white mt-6">
-      <div className="container p-8 flex flex-wrap items-center justify-between">
-        <div className="flex flex-wrap gap-2 justify-between">
-          <div className="flex flex-row">
-            <Link href="github.com/EzAntoine">
+      <div className="container flex flex-wrap items-center justify-between p-8">
+        <div className="flex flex-wrap justify-between gap-2">
+          <div className="flex flex-row ">
+            <Link href="https://github.com/EzAntoine" target="_blank">
               <Image
                 src={GithubIcon}
                 alt="Github"
+                title="github.com/EzAntoine"
                 className="p-0.5 w-10 h-10 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out"
               />
             </Link>
-            <Link href="linkedin.com/in/ezequielantoine">
+            <Link
+              href="https://linkedin.com/in/ezequielantoine"
+              target="_blank"
+            >
               <Image
                 src={LinkedinIcon}
                 alt="LinkedIn"
+                title="linkedin.com/in/ezequielantoine"
                 className="p-0.5 w-10 h-10 rounded-sm bg-white mr-1 transform hover:scale-110 transition-transform duration-300 ease-in-out"
               />
             </Link>
           </div>
           <div>
-            <Link href="ezequielantoine@gmail.com" className="flex flex-row">
+            <Link href="mailto:ezequielantoine@gmail.com">
               <Image
                 src={MailIcon}
                 alt="Email"
-                className="p-0.5 w-10 h-10 rounded-sm bg-white mr-3 transform hover:scale-110 transition-transform duration-300 ease-in-out"
+                title="ezequielantoine@gmail.com"
+                className="p-0.5 w-10 h-10 rounded-sm bg-white transform hover:scale-110 transition-transform duration-300 ease-in-out"
               />
-              <p className="text-slate-600 mt-2 hover:text-white hidden md:block">
-                ezequielantoine@gmail.com
-              </p>
             </Link>
           </div>
         </div>
-        <p className="text-slate-600">Ezequiel Antoine - 2024</p>
+        <p className="text-slate-600">
+          <Link href="mailto:ezequielantoine@gmail.com">
+            <p className="hidden mt-2 text-slate-600 hover:text-white md:block">
+              ezequielantoine@gmail.com
+            </p>
+          </Link>
+          Ezequiel Antoine - 2024
+        </p>
       </div>
     </footer>
   );

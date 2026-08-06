@@ -15,7 +15,7 @@ import tailwindSVG from "../../../public/tecnologiesSVG/tailwindcss.svg";
 import vercelSVG from "../../../public/tecnologiesSVG/vercel_dark.svg";
 import nestSVG from "../../../public/tecnologiesSVG/nestjs.svg";
 import mongoSVG from "../../../public/tecnologiesSVG/mongodb.svg";
-import viteSVG from "../../../public/tecnologiesSVG/vitejs.svg";
+import pythonSVG from "../../../public/tecnologiesSVG/python.svg";
 import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
 import figmaSVG from "../../../public/tecnologiesSVG/figma.svg";
 
@@ -78,18 +78,6 @@ const TAB_DATA = [
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
-              src={viteSVG}
-              alt="Vite"
-              title="Vite"
-              width={60}
-              height={60}
-            />
-            <p style={{ fontSize: "0.8em", margin: "0" }}>Vite</p>
-          </div>
-        </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
-          <div style={{ textAlign: "center" }}>
-            <Image
               src={nextSVG}
               alt="Next.js"
               title="Next.js"
@@ -97,6 +85,18 @@ const TAB_DATA = [
               height={60}
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>NextJs</p>
+          </div>
+        </li>
+        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+          <div style={{ textAlign: "center" }}>
+            <Image
+              src={pythonSVG}
+              alt="Python"
+              title="Python"
+              width={60}
+              height={60}
+            />
+            <p style={{ fontSize: "0.8em", margin: "0" }}>Python</p>
           </div>
         </li>
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
@@ -281,7 +281,10 @@ const TAB_DATA = [
             - Frontend: Vite, React, TypeScript, Tailwind CSS, CSS Modules,
             Redux, Zustand.
           </ul>
-          <ul>- Backend: Python, FastAPI, SQLAlchemy, PostgreSQL, Docker.</ul>
+          <ul>
+            - Backend: Python, FastAPI, SQLAlchemy, PostgreSQL, Docker, EDA
+            (Arquitectura Basada en Eventos).
+          </ul>
           <ul>- Control de versiones con Git y Github.</ul>
           <ul>- Despliegue en Vercel.</ul>
         </li>
