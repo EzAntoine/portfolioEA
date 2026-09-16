@@ -4,9 +4,11 @@ const NavLink = ({ href, title }) => {
     return(
         <Link
             href={href}
-            className="block py-2 pl-3 pr-4 text whitespace-nowrap"
+            className="group block py-2 pl-3 pr-4 text whitespace-nowrap"
         >
-            {title}
+            <span className="border-b border-transparent transition-colors group-hover:border-lime-500 group-focus-visible:border-lime-500">
+                {title}
+            </span>
         </Link>
     )
 }

@@ -45,7 +45,7 @@ const projectsData = [
       "Next, TypeScript - Configuracion de dominio personalizado y hosting en Vercel.",
     image: "/projects/chdiazlanding.png",
     tag: ["Todos", "Profesional"],
-    gitUrl: "https://github.com/EzAntoine/chdiaz-landing",
+    gitUrl: "" /* "https://github.com/EzAntoine/chdiaz-landing" */,
     siteUrl: "https://www.chdiazpeluqueria.com/",
   },
   {
