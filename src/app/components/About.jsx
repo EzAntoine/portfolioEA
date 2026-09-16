@@ -111,7 +111,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>NodeJs</p>
           </div>
         </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={expressSVG}
@@ -122,7 +122,7 @@ const TAB_DATA = [
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Express</p>
           </div>
-        </li>
+        </li> */}
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -135,7 +135,7 @@ const TAB_DATA = [
             <p style={{ fontSize: "0.8em", margin: "0" }}>NestJs</p>
           </div>
         </li>
-        <li className="flex items-center justify-center md:w-1/6 sm:1/4">
+        {/* <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
               src={javaSVG}
@@ -146,7 +146,7 @@ const TAB_DATA = [
             />
             <p style={{ fontSize: "0.8em", margin: "0" }}>Java</p>
           </div>
-        </li>
+        </li> */}
         <li className="flex items-center justify-center md:w-1/6 sm:1/4">
           <div style={{ textAlign: "center" }}>
             <Image
@@ -271,7 +271,7 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Experiencia laboral",
+    title: "Experiencia Profesional",
     id: "experience",
     content: (
       <ul className="pl-2 list-disc">
@@ -325,7 +325,7 @@ export default function About() {
                 active={tab === "experience"}
               >
                 {" "}
-                Experiencia laboral{" "}
+                Experiencia Profesional{" "}
               </TabButton>
               <TabButton
                 selectTab={() => handleTabChange("education")}

@@ -5,6 +5,37 @@ import ProjectTag from "./ProjectTag";
 
 const projectsData = [
   {
+    id: 8,
+    title: "Domingotas",
+    description:
+      "Aplicación web progresiva para el seguimiento de gotas. Permite registrar la cantidad y hora de cada toma, consultar y corregir el historial, agregar observaciones y configurar recordatorios mediante notificaciones push. Diseñada para instalarse en iPhone.",
+    tecnologies:
+      "Next.js 16, React 19, TypeScript, Google Sheets API, Web Push y Vercel.",
+    images: [
+      "/projects/Domingotas/domingotas1.png",
+      "/projects/Domingotas/domingotas2.png",
+    ],
+    tag: ["Todos", "Personales"],
+    gitUrl: "",
+    siteUrl: "",
+  },
+  {
+    id: 7,
+    title: "Chanchito",
+    description:
+      "Webapp de finanzas personales para registrar ingresos, gastos y ahorros, organizarlos por categorías y consultar reportes. Se puede instalar en el celular como PWA. Incluye perfiles separados y una cuenta de prueba con datos de ejemplo.",
+    tecnologies:
+      "React, TypeScript, Vite, CSS, Lucide Icons, Node.js, Vercel Functions, Google Sheets y Upstash Redis.",
+    images: [
+      "/projects/Chanchito/chanchito1.png",
+      "/projects/Chanchito/chanchito2.png",
+      "/projects/Chanchito/chanchito3.png",
+    ],
+    tag: ["Todos", "Personales"],
+    gitUrl: "",
+    siteUrl: "https://chanchito-app-chi.vercel.app/",
+  },
+  {
     //El id mas bajo queda primero
     id: 6,
     title: "Peluqueria CH Diaz",
@@ -125,6 +156,7 @@ export default function ProjectsSection() {
               description={project.description}
               tecnologies={project.tecnologies}
               imgUrl={project.image}
+              images={project.images}
               tags={project.tag}
               gitUrl={project.gitUrl}
               siteUrl={project.siteUrl}
