@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
+import { LanguageProvider } from "./i18n/LanguageContext";
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -21,20 +22,22 @@ const personSchema = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-black">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <div className="container px-12 py-4 mx-auto">
-        <Navbar />
-        <div className="container mx-auto mt-24">
-          <HeroSection />
+    <LanguageProvider>
+      <main className="flex flex-col min-h-screen bg-black">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <div className="container px-12 py-4 mx-auto">
+          <Navbar />
+          <div className="container mx-auto mt-24">
+            <HeroSection />
+          </div>
+          <About />
+          <ProjectsSection />
+          <Footer />
         </div>
-        <About />
-        <ProjectsSection />
-        <Footer />
-      </div>
-    </main>
+      </main>
+    </LanguageProvider>
   );
 }

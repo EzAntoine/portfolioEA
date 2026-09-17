@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { createPortal } from "react-dom";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function ProjectCard({
   title,
@@ -21,6 +22,8 @@ export default function ProjectCard({
   siteUrl,
 }) {
   const maxLength = 150; // Establece la longitud máxima del texto.
+  const { t } = useLanguage();
+  const labels = t.projects;
   const [showMore, setShowMore] = useState(false);
   const [activeImage, setActiveImage] = useState(null);
   const closeButtonRef = useRef(null);
@@ -71,7 +74,7 @@ export default function ProjectCard({
               <Image
                 key={image}
                 src={image}
-                alt={`${title}: captura ${index + 1}`}
+                alt={`${title}: ${labels.screenshot} ${index + 1}`}
                 width={385}
                 height={833}
                 className="h-full min-w-0 flex-1 object-contain"
@@ -84,7 +87,7 @@ export default function ProjectCard({
             {gitUrl ? (
               <Link
                 href={gitUrl}
-                aria-label={`Ver código de ${title}`}
+                aria-label={`${labels.code} ${title}`}
                 className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,7 +99,7 @@ export default function ProjectCard({
               <button
                 type="button"
                 onClick={() => setActiveImage(0)}
-                aria-label={`Ver imágenes de ${title}`}
+                aria-label={`${labels.preview} ${title}`}
                 className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
               >
                 <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover/link:text-white" />
@@ -105,7 +108,7 @@ export default function ProjectCard({
             {siteUrl ? (
               <Link
                 href={siteUrl}
-                aria-label={`Ir al sitio de ${title}`}
+                aria-label={`${labels.site} ${title}`}
                 className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -125,12 +128,12 @@ export default function ProjectCard({
             }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 md:p-10"
           >
-            <div role="dialog" aria-modal="true" aria-label={`Imágenes de ${title}`} className="relative flex h-full w-full max-w-6xl flex-col items-center justify-center">
+            <div role="dialog" aria-modal="true" aria-label={`${labels.imagesOf} ${title}`} className="relative flex h-full w-full max-w-6xl flex-col items-center justify-center">
               <button
                 ref={closeButtonRef}
                 type="button"
                 onClick={() => setActiveImage(null)}
-                aria-label="Cerrar imagen"
+                aria-label={labels.close}
                 className="absolute right-0 top-0 z-10 rounded-full bg-black/70 p-2 text-white hover:bg-white/20"
               >
                 <XMarkIcon className="h-7 w-7" />
@@ -138,7 +141,7 @@ export default function ProjectCard({
               <div className="relative h-full w-full min-h-0">
                 <Image
                   src={previewImages[activeImage]}
-                  alt={`${title}: captura ${activeImage + 1}`}
+                  alt={`${title}: ${labels.screenshot} ${activeImage + 1}`}
                   fill
                   sizes="100vw"
                   className="object-contain"
@@ -146,11 +149,11 @@ export default function ProjectCard({
               </div>
               {previewImages.length > 1 && (
                 <div className="absolute bottom-0 flex items-center gap-6 rounded-full bg-black/70 px-3 py-2 text-white">
-                  <button type="button" onClick={() => setActiveImage((activeImage - 1 + previewImages.length) % previewImages.length)} aria-label="Imagen anterior" className="rounded-full p-1 hover:bg-white/20">
+                  <button type="button" onClick={() => setActiveImage((activeImage - 1 + previewImages.length) % previewImages.length)} aria-label={labels.previous} className="rounded-full p-1 hover:bg-white/20">
                     <ArrowLeftIcon className="h-6 w-6" />
                   </button>
                   <span>{activeImage + 1} / {previewImages.length}</span>
-                  <button type="button" onClick={() => setActiveImage((activeImage + 1) % previewImages.length)} aria-label="Imagen siguiente" className="rounded-full p-1 hover:bg-white/20">
+                  <button type="button" onClick={() => setActiveImage((activeImage + 1) % previewImages.length)} aria-label={labels.next} className="rounded-full p-1 hover:bg-white/20">
                     <ArrowRightIcon className="h-6 w-6" />
                   </button>
                 </div>
@@ -171,7 +174,7 @@ export default function ProjectCard({
                 onClick={() => setShowMore(true)}
                 className="text-gray-200 hover:underline"
               >
-                Mostrar más
+                {labels.more}
               </button>
             </span>
           )}
@@ -182,13 +185,13 @@ export default function ProjectCard({
                 onClick={() => setShowMore(false)}
                 className="text-gray-200 hover:underline"
               >
-                Mostrar menos
+                {labels.less}
               </button>
             </div>
           )}
           {showMore}
         </p>
-        <h6 className="font-xl font-semibold mb-2 mt-4">Tecnologías:</h6>
+        <h6 className="font-xl font-semibold mb-2 mt-4">{labels.technologies}</h6>
         <p className="text-[#ADB7BE] text-sm">{tecnologies}</p>
       </div>
     </div>

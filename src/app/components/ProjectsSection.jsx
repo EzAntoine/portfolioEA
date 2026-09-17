@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const projectsData = [
   {
@@ -48,7 +49,7 @@ const projectsData = [
     gitUrl: "" /* "https://github.com/EzAntoine/chdiaz-landing" */,
     siteUrl: "https://www.chdiazpeluqueria.com/",
   },
-  {
+  /* {
     //El id mas bajo queda primero
     id: 5,
     title: "Java CRUD con Api Rest",
@@ -59,7 +60,7 @@ const projectsData = [
     tag: ["Todos", "Educativos"],
     gitUrl: "https://github.com/EzAntoine/java-railway-crud-apirest",
     siteUrl: "",
-  },
+  }, */
   {
     id: 4,
     title: "ONG Vamos!!",
@@ -72,7 +73,7 @@ const projectsData = [
     gitUrl: "https://github.com/VamosONG/VamosApp",
     siteUrl: "https://www.youtube.com/watch?v=SlAaNeMeo8g",
   },
-  {
+  /* {
     id: 3,
     title: "Portfolio Personal",
     description:
@@ -106,11 +107,18 @@ const projectsData = [
     tag: ["Todos", "Educativos"],
     gitUrl: "",
     siteUrl: "",
-  },
+  }, */
 ];
 
 export default function ProjectsSection() {
   const [tag, setTag] = useState("Todos");
+  const { t } = useLanguage();
+  const filterLabels = {
+    Todos: t.projects.filters.all,
+    Profesional: t.projects.filters.professional,
+    Educativos: t.projects.filters.educational,
+    Personales: t.projects.filters.personal,
+  };
 
   const handleTag = (newTag) => {
     setTag(newTag);
@@ -124,37 +132,31 @@ export default function ProjectsSection() {
     <section id="projects">
       <div>
         <h2 className="mt-4 mb-4 text-4xl font-bold text-center text-white md:mb-12">
-          Proyectos
+          {t.projects.title}
         </h2>
         <div className="flex flex-wrap items-center justify-center w-full gap-2 py-6 text-white">
-          <ProjectTag
-            onClick={handleTag}
-            name="Todos"
-            isSelected={tag === "Todos"}
-          />
-          <ProjectTag
-            onClick={handleTag}
-            name="Profesional"
-            isSelected={tag === "Profesional"}
-          />
-          <ProjectTag
-            onClick={handleTag}
-            name="Educativos"
-            isSelected={tag === "Educativos"}
-          />
-          <ProjectTag
-            onClick={handleTag}
-            name="Personales"
-            isSelected={tag === "Personales"}
-          />
+          {Object.entries(filterLabels).map(([key, label]) => (
+            <ProjectTag
+              key={key}
+              onClick={() => handleTag(key)}
+              name={label}
+              isSelected={tag === key}
+            />
+          ))}
         </div>
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           {filteredProjects.map((project) => (
             <ProjectCard
               key={project.id}
-              title={project.title}
-              description={project.description}
-              tecnologies={project.tecnologies}
+              title={t.projects.entries[project.id]?.title || project.title}
+              description={
+                t.projects.entries[project.id]?.description ||
+                project.description
+              }
+              tecnologies={
+                t.projects.entries[project.id]?.technologies ||
+                project.tecnologies
+              }
               imgUrl={project.image}
               images={project.images}
               tags={project.tag}

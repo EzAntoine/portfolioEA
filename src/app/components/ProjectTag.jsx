@@ -8,7 +8,7 @@ export default function ProjectTag({ name, onClick, isSelected }) {
     <div>
       <button 
         className={`${buttonStyles} rounded-sm border-2 px-3 py-2 text-xl cursor-pointer`}
-        onClick={()=>onClick(name)}>
+        onClick={onClick}>
             {name}
       </button>
     </div>
