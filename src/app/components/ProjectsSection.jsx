@@ -9,7 +9,7 @@ const projectsData = [
     id: 8,
     title: "Domingotas",
     description:
-      "Aplicación web progresiva para el seguimiento de gotas. Permite registrar la cantidad y hora de cada toma, consultar y corregir el historial, agregar observaciones y configurar recordatorios mediante notificaciones push. Diseñada para instalarse en iPhone.",
+      "Aplicación web progresiva para el seguimiento de gotas medicinales para una mascota. Permite registrar la cantidad y hora de cada toma, consultar y corregir el historial, agregar observaciones y configurar recordatorios mediante notificaciones push. Diseñada para instalarse en iPhone.",
     tecnologies:
       "Next.js 16, React 19, TypeScript, Google Sheets API, Web Push y Vercel.",
     images: [
@@ -24,7 +24,7 @@ const projectsData = [
     id: 7,
     title: "Chanchito",
     description:
-      "Webapp de finanzas personales para registrar ingresos, gastos y ahorros, organizarlos por categorías y consultar reportes. Se puede instalar en el celular como PWA. Incluye perfiles separados y una cuenta de prueba con datos de ejemplo.",
+      "Webapp de finanzas personales para registrar ingresos, gestion de tarjetas, suscripciones, gastos y ahorros, organizarlos por categorías y consultar reportes. Se puede instalar en el celular como PWA. Incluye perfiles separados y una cuenta de prueba con datos de ejemplo.",
     tecnologies:
       "React, TypeScript, Vite, CSS, Lucide Icons, Node.js, Vercel Functions, Google Sheets y Upstash Redis.",
     images: [
