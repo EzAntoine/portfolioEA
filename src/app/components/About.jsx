@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -18,6 +18,8 @@ import pythonSVG from "../../../public/tecnologiesSVG/python.svg";
 import dockerSVG from "../../../public/tecnologiesSVG/docker.svg";
 import figmaSVG from "../../../public/tecnologiesSVG/figma.svg";
 
+const tabs = ["skills", "experience", "education", "courses"];
+
 const skills = [
   ["TypeScript", typescriptSVG, 60], ["React", reactSVG, 60],
   ["Tailwind CSS", tailwindSVG, 70], ["Figma", figmaSVG, 40],
@@ -33,13 +35,21 @@ export default function About() {
   const { t } = useLanguage();
   const labels = t.about;
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setTab(tabs[(tabs.indexOf(tab) + 1) % tabs.length]);
+    }, 8000);
+
+    return () => clearTimeout(timeout);
+  }, [tab]);
+
   return (
     <section className="text-white" id="about">
       <div className="items-start gap-8 px-4 py-8 md:grid md:grid-cols-1 xl:gap-16 sm:py-16 xl:px-16">
         <div className="col-span-1 mt-8">
           <h2 className="mt-4 mb-4 text-4xl font-bold text-center text-white md:mb-12">{labels.title}</h2>
           <div className="flex flex-row mt-8">
-            {["skills", "experience", "education", "courses"].map((id) => (
+            {tabs.map((id) => (
               <TabButton key={id} selectTab={() => setTab(id)} active={tab === id}>
                 {labels[id]}
               </TabButton>
